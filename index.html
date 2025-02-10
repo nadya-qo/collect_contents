@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Collect contents</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="wrapper cp1">
+            <div class="cp-3">
+                <h1>Собрать оглавление</h1>
+            </div>
+        <main>
+            <div class="main">
+                <div class="input">
+                    <p>Ввод текста</p>
+                    <textarea type="text" class="input__window"> </textarea>
+                </div>
+                <div class="eduction">
+                    <p>Результат</p>
+                    <textarea type="text" class="eduction__window"> </textarea>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <div class="pu-pu-pu">
+        <img id="catpupupu" src="https://i.ibb.co/rRSc0s8K/cat-pu-pu-pu.jpg" alt="cat-pu-pu-pu" style="display: none;">
+        <script>
+            const puPuPuImg = document.getElementById('catpupupu');
+            const puPuPu = document.querySelector('.pu-pu-pu');
+            puPuPu.addEventListener('click', function() {
+            if (puPuPuImg.style.display === "none") {
+                puPuPuImg.style.display = "inline";
+                puPuPu.style.position = "relative";
+            } else {
+                puPuPuImg.style.display = "none";
+                puPuPu.style.position = "fixed";
+            }
+            });
+        </script>
+    </div>
+
+<script src="contents.js"></script>
+</body>
+</html>

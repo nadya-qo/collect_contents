@@ -1,0 +1,134 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #1a9177d4;
+}
+a:visited {
+    color: #2bcfacd4;
+}
+a:hover {
+    color: #22dab2d5;
+    text-decoration: underline;
+}
+body {
+    font-size: Roboto, sans-serif;
+}
+h1, h2, h3 {
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	color: #111;
+}
+.wrapper {
+    width: 100%;
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+/* contents */
+textarea[type="text"] {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit; 
+    margin: 0;
+  }
+textarea.input__window,
+textarea.eduction__window {
+    width: 90%;
+    max-width: 530px;
+    max-height: 800px;
+    box-shadow: 0 0 4px #b9b9b9;
+    min-width: 400px;
+}
+textarea.input__window:focus,
+textarea.eduction__window:focus {
+    outline: #0088ff dashed 1px;
+    border-color: #5cb3fd;
+}
+.cp-3 {
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.cp-1 {
+    background-color: rgb(242, 242, 242);
+    text-align: center;
+    height: 100vh;
+}
+.main {
+    width: 100%;
+    display: flex;
+    padding-bottom: 6%;
+    column-gap: 2%;
+    justify-content: center;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+}
+.input__window {
+    min-height: 320px;
+}
+.eduction {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+}
+.eduction__window {
+    min-height: 320px;
+}
+.cp-3 h1 {
+	text-align: center;
+}
+.pu-pu-pu {
+    text-align: center;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.pu-pu-pu img {
+    max-width: 100%;
+}
+.input p,
+.eduction p {
+    margin-bottom: 14px;
+}
+/* media queries */
+@media (max-width: 1100px) {
+    .wrapper {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .input,
+    .eduction {
+        width: 49%;
+    }
+    textarea.input__window, textarea.eduction__window {
+        width: 100%;
+        max-width: 290px;
+        max-height: 608px;
+        min-width: 290px;
+    }
+}
+@media (max-width: 700px) {
+	.wrapper {
+	    max-width: 620px;
+	}
+    .main {
+        flex-direction: column;
+    }
+    .input,
+    .eduction {
+        width: 100%;
+    }
+    .input {
+        margin-bottom: 20px;
+    }
+}
